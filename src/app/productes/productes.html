@@ -1,0 +1,19 @@
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let movieItem of movies.popular">
+        <div class="card h-100 shadow-sm">
+          <img [src]="movieItem.poster_url" class="card-img-top" alt="{{ movieItem.title }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ movieItem.title }}</h5>
+            <p class="card-text text-muted">
+              ⭐ {{ movieItem.vote_average }}
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-primary btn-sm">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
